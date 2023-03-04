@@ -1,0 +1,265 @@
+.detailPet {
+  // padding-top: 20px;
+  background-color: #efefef;
+  .detail {
+    padding-top: 20px;
+    display: flex;
+    // background-color: white;
+    .left {
+      //   width: 50%;
+      padding-left: 15%;
+
+      .top {
+        img {
+          width: 400px;
+          height: 400px;
+          border-radius: 15px;
+        }
+      }
+      .bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        img {
+          width: 100px;
+          height: 100px;
+          margin-left: 25px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+        img:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      padding-left: 20px;
+
+      h2 {
+      }
+      .box {
+        border-radius: 15px;
+        width: 66%;
+        h3 {
+          text-align: center;
+          padding-bottom: 7px;
+          padding-top: 7px;
+
+          border-top-left-radius: 13px;
+          border-top-right-radius: 13px;
+          background-color: #f2f2f2;
+          border: 1px solid lightgrey;
+          border-bottom: none;
+          position: relative;
+          top: 19px;
+        }
+        ul {
+          background-color: white;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          border-bottom-left-radius: 13px;
+          border-bottom-right-radius: 13px;
+          border: 1px solid lightgrey;
+          border-top: none;
+          li {
+            padding: 3px 3px;
+          }
+        }
+      }
+      p {
+        background-color: white;
+        border: 1px solid lightgrey;
+        width: 64%;
+        padding-left: 10px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .total {
+        color: hotpink;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      /* CSS button */
+      a:hover {
+        text-decoration: none !important;
+      }
+      .dedcription-btn {
+        text-decoration: none;
+        width: 25%;
+        position: relative;
+        display: inline-block;
+        border-radius: 30px;
+        background-color: #fcfcfc;
+        color: gray;
+        text-align: center;
+        font-size: 18px;
+        padding: 9px 0;
+        transition: all 0.3s;
+        padding-right: 40px;
+        margin: 20px 5px;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.09);
+      }
+      .dedcription-btn .btn-icon {
+        background-color: hotpink;
+        width: 92px;
+        height: 45px;
+        float: right;
+        position: absolute;
+        border-radius: 30px 30px 30px 0;
+        right: 0px;
+        top: 0px;
+        transition: all 0.3s;
+      }
+      .name-descripeion {
+        position: relative;
+        z-index: 9999;
+      }
+      .btn-icon::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 45px solid #fcfcfc;
+        border-right: 40px solid transparent;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .dedcription-btn:hover .btn-icon {
+        width: 100%;
+        border-radius: 30px;
+      }
+      .dedcription-btn:hover .btn-icon::after {
+        display: none;
+        opacity: 0.1;
+      }
+      .btn-icon i {
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        color: #fff;
+      }
+      .dedcription-btn:hover {
+        color: #fff !important;
+      }
+    }
+  }
+  .seeMore {
+    background-color: white;
+    padding-bottom: 20px;
+
+    h3 {
+      padding-top: 20px;
+      padding-left: 7%;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .listSeeMore {
+      padding-top: 10px;
+      height: 350px;
+      padding-bottom: 20px;
+      padding-left: 5%;
+      display: flex;
+      gap: 5%;
+      a {
+        text-decoration: none;
+        .item {
+          background-color: white;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          border-radius: 10px;
+          text-align: center;
+          width: 200px;
+          height: 260px;
+          cursor: pointer;
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.09);
+          border: none;
+          .name {
+            // display: none;
+            // border: 1px solid #000;
+            width: 100px;
+            height: 60px;
+            margin-left: 5px;
+            transform: rotate(-90deg);
+            transition: all 0.5s;
+
+            span {
+              color: white;
+              text-align: center;
+              font-weight: bold;
+              font-size: 18px;
+              // display: none;
+              transition: all 0.5s;
+            }
+            i {
+              color: white;
+              font-weight: bold;
+              margin-left: 60px;
+              transition: all 0.5s;
+            }
+          }
+          img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+        .item:hover {
+          border-bottom: 5px solid hotpink;
+        }
+        .item:hover .name {
+          transform: rotate(0deg);
+        }
+        .item:hover span {
+          color: hotpink;
+        }
+        .item:hover i {
+          color: lightgray;
+        }
+      }
+    }
+  }
+  .comment {
+    height: 860px;
+    h2 {
+      text-align: center;
+    }
+    .listComment {
+      padding-left: 30%;
+      .item {
+        margin-top: 40px;
+        .header {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: relative;
+            top: 12px;
+          }
+          .name {
+            padding-left: 5px;
+          }
+          .date {
+            color: gray;
+            font-size: 13px;
+            margin-left: 28px;
+          }
+        }
+        .body {
+          padding-left: 13%;
+          p {
+            background-color: white;
+            color: gray;
+            width: 400px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 7px;
+            padding-right: 7px;
+            border-radius: 10px;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.09);
+          }
+        }
+      }
+    }
+  }
+}

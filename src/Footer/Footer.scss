@@ -1,0 +1,35 @@
+.Footer {
+  height: 300px;
+  border-bottom: 5px solid pink;
+  border-top: 4px solid pink;
+  background-color: #efefef;
+
+  img {
+    border-radius: 100%;
+    width: 180px;
+    margin-left: 5px;
+    // margin-top: 120px;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  img:hover {
+    transform: translateY(-50px);
+    transform: translateX(50px);
+    animation: bounce 0.4s linear infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+}
